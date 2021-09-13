@@ -9,7 +9,7 @@
         }
 
         th {
-            background-color: rgb(211, 206, 206);
+            background-color: rgb(228, 226, 226);
             text-align: center;
             font-weight: bold;
         }
@@ -29,16 +29,19 @@
     </style>
 </head>
 <body>
+    <table align="center">
+        <img src="images/eclass_top.png" width="100%" height="300px">
+    </table>
     <table width="500" height="500" align="center">
         <form name="resistration"> 
             <tr>
-                <th colspan="2" height="80">회원가입</th>
+                <th colspan="2" height="40">회원가입</th>
             </tr>
             <tr>
                 <th>아이디</th>
                 <td>
                     <input type="text" name="id">
-                    <input type="image" src="check.png" class="imageAlign">
+                    <input type="image" src="images/check.png" class="imageAlign">
                 </td>
             </tr>
             <tr>
@@ -111,7 +114,8 @@
             </tr>
             <tr>
                 <th colspan="2">
-                    <input type="submit" value="가입하기"><input type="reset" value="다시작성">
+                    <input type="button" value="가입하기" onclick="document.location='member4.html'">
+                    <input type="reset" value="다시작성">
                 </th>
             </tr>
         </form>
