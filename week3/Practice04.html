@@ -24,7 +24,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="alert('어서 오세요'); frm1.id.focus();">
     <table align="center">
         <img src="images/eclass_top.png" width="100%" height="300px">
     </table>
@@ -57,7 +57,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" value="로그인">
+                    <input type="button" value="로그인" onclick="alert('회원이 아니군요')">
                     <input type="button" value="가입하기" onclick="document.location='member2.html'">
                 </td>
             </tr>

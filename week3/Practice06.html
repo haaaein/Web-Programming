@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        th {
+            background-color: cornflowerblue;
+            height: 50;
+        }
+
+        input.imageAlign {
+            vertical-align: middle;
+            width: 300px;
+            height: 300px;
+        }
+        td {
+            align-self: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+    <script>
+        function calc() 
+        {
+            var exp = prompt("계산할 수식을 입력하세요.");
+            if (exp != null) {
+                var result = eval(exp);
+                alert(result);
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <table align="center" width="500" height="400">
+        <tr>
+            <th colspan="2" height="50">CalCuLaTor</th>
+        </tr>
+        <tr>
+            <td><input type="image" src="images/calc.png" class="imageAlign"></td>
+            <td><input type="button" value="계산하기" onclick="calc()" align="center"></td>
+        </tr>
+        <tr>
+            <th colspan="2" height="50"></th>
+        </tr>
+    </table>
+</body>
+</html>

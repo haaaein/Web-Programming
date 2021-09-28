@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹브라우저별 이벤트핸들러</title>
+<style>
+            table, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            td, tr, th {
+                width: 100px;
+                height: 20px;
+                padding: 20px;
+                text-align: center;
+            }
+
+            tr, th {
+                font-size: 20px;
+                font-weight: bold;
+            }
+			
+			th {
+				background-color: #037ffc;
+			}
+            td {
+                font-size: 13px;
+                background-color: #b0d7ff;
+            }
+        </style>
+</head>
+<body>
+	 <div align="center">
+            <table border="1">
+                <caption style="padding: 10px;">자바스크립트 이벤트 핸들러의 웹 브라우저별 허용 여부</caption>
+                <tr>
+                    <th>이벤트</th>
+                    <th>이벤트<br>핸들러</th>
+                    <th>Internet Explorer</th>
+                    <th>Chrome</th>
+                    <th>Eclipse built-in</th>
+                </tr>
+                <tr>
+                    <td>Load</td>
+                    <td>OnLoad</td>
+                    <td>O</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Unload</td>
+                    <td>onUnload</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Click</td>
+                    <td>onClick</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td>onSubmit</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Reset</td>
+                    <td>onReset</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>onFocus</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Blur</td>
+                    <td>onBlur</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Mouseover</td>
+                    <td>onMouseover</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Mouseout</td>
+                    <td>onMouseout</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Keydown</td>
+                    <td>onKeydown</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
