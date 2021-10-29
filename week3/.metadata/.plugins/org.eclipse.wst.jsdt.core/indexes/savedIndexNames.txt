@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/yeohaein/Documents/Web Programming/week3/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3286600449.index
+4057412336.index
+2923189713.index
+1130758204.index
+2784427549.index
+3424050388.index
+4241652102.index
