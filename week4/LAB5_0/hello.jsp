@@ -7,9 +7,12 @@
 <head>
 <meta charset="UTF-8">
 <title>ch03 : HelloWorld </title>
+<style>
+	h2, p {text-align: center;}
+</style>
 </head>
-<body align="center">
+<body>
 	<h2>Hello : 안녕하세요 </h2><hr>
-	현재 날짜와 시간은 : <%=new java.util.Date() %>
+	<p>현재 날짜와 시간은 : <%=new java.util.Date() %></p>
 </body>
 </html>
