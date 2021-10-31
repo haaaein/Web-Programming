@@ -5,16 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>LAB5_1</title>
-	<%@ page %>
-	<%
-		out.println("JSP,");
-		out.println("Programming!<br>");
-		out.println("Jsp, <br>");
-		out.println("Programming!<br>");
-		out.println(" \"JSP\", Programming!");
-	%>
 </head>
 <body>
-
+	<%
+	out.println("JSP,");
+	out.println("Programming!<br>");
+	out.println("Jsp, <br>");
+	out.println("Programming!<br>");
+	out.println(" \"JSP\", Programming!");
+	%>
 </body>
 </html>
