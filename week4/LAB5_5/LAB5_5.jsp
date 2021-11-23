@@ -33,7 +33,9 @@
 </head>
 <body>
 	<%
-	String[] images = {"미소", "별", "클로버", "하트", "슬픔"};
+	String[] imgName = {"미소", "별", "클로버", "하트", "슬픔"};
+	String[] img = {"smile", "star", "clover", "heart", "sad"};
+
 	out.println("<ul>");
 	out.println("<li class='list-1'>" + "<span class='s1'>" + "[이미지]" + "</span>");
 	out.println("<span class='s1'>" + "[이미지명]" + "</span>");
@@ -41,8 +43,8 @@
 	for (int i = 0; i < images.length; i++) {
 		out.println("<li>");
 		
-		out.println("<img src='images/" + images[i] + ".jpg'>");
-		out.println("<span>" + images[i] + "</span>");
+		out.println("<img src='images/" + img[i] + ".jpg'>");
+		out.println("<span>" + imgName[i] + "</span>");
 		out.println("<textarea rows=5 cols=50>" + "이 이미지는..." + "</textarea><br>");
 		
 		out.println("</li>");
