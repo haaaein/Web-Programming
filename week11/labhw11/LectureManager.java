@@ -13,12 +13,4 @@ public class LectureManager {
 	public void add(LectureBean Ibean) {
 		lectureList.add(Ibean);
 	}
-	
-	public LectureBean getList(int type) {
-		for(LectureBean lec:lectureList) {
-			if (lec.getType() == type)
-				return lec;
-		}
-		return null;
-	}
 }

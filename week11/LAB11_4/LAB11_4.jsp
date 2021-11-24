@@ -22,22 +22,25 @@
 	<form name="schedule" method="POST" action="LAB11_4.jsp">
 	과목 타입: <select name="type">
 <%
-	for (int i = 0; i < schedule.typeNames.length; i++) {
-		out.println("<option value=" + i + ">" + schedule.typeNames[i] + "</option>");
+	String[] typeNames = schedule.getTypeNames();
+	for (int i = 0; i < typeNames.length; i++) {
+		out.println("<option value=" + i + ">" + typeNames[i] + "</option>");
 	}
 %>
 	</select>
 	과목명 : <select name="title">
 <%
-	for (int i = 0; i < schedule.titleNames.length; i++) {
-		out.println("<option  value=" + i + ">" + schedule.titleNames[i] + "</option>");
+	String[] titleNames = schedule.getTitleNames();
+	for (int i = 0; i < titleNames.length; i++) {
+		out.println("<option  value=" + i + ">" + titleNames[i] + "</option>");
 	}
 %>
 	</select>
 	요일 : <select name="day">
 <%
-	for (int i = 0; i < schedule.dayNames.length; i++) {
-		out.println("<option value=" + i + ">" + schedule.dayNames[i] + "</option>");
+	String[] dayNames = schedule.getDayNames();
+	for (int i = 0; i < dayNames.length; i++) {
+		out.println("<option value=" + i + ">" + dayNames[i] + "</option>");
 	}
 %>
 	</select>
@@ -66,11 +69,12 @@
 	if (list == null) {
 		list = new ArrayList<LectureBean>();
 	}
+	
 	if (schedule.getType() != -1 && schedule.getTitle() != -1) {
 		list.add(schedule);
 		session.setAttribute("schedule", list);	
 	}
-	
+
 	application.log(list + "추가됨");
 	if (list != null) {
 		for (LectureBean li : list)

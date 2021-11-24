@@ -7,10 +7,22 @@ public class LectureBean {
 	private int time;
 	private int consecutive;
 	
-	public static final String[] typeNames = {"전공필수", "전공선택", "교양", "자유선택"};
-	public static final String[] titleNames = {"웹프로그래밍", "운영체제", "객체지향프로그래밍", "데이터베이스개론", 
+	static final String[] typeNames = {"전공필수", "전공선택", "교양", "자유선택"};
+	static final String[] titleNames = {"웹프로그래밍", "운영체제", "객체지향프로그래밍", "데이터베이스개론", 
 			"자료구조", "네트워크", "창의와감성", "사회봉사"};
-	public static final String[] dayNames = {"월", "화", "수", "목", "금"};
+	static final String[] dayNames = {"월", "화", "수", "목", "금"};
+	
+	public String[] getTypeNames() {
+		return typeNames;
+	}
+	
+	public String[] getTitleNames() {
+		return titleNames;
+	}
+	
+	public String[] getDayNames() {
+		return dayNames;
+	}
 	
 	public LectureBean() {
 		this.type = -1;
