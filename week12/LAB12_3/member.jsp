@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%request.setCharacterEncoding("UTF-8");%>
+<jsp:useBean id="login" class="labhw12.LoginBean" scope="session"/>
 
 <!DOCTYPE html>
 <html>
