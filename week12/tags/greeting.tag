@@ -2,9 +2,5 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <%@ attribute name="color" %>
 <font color="${ color }">
-${param.id}
-<%
-	out.println("님 환영합니다.!<br><br>");
-%>
-
+${param.id} 님 환영합니다.!<br><br>
 </font>

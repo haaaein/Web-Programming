@@ -2,14 +2,7 @@
     pageEncoding="UTF-8" import="java.util.*"%>
     <% request.setCharacterEncoding("UTF-8"); %>
     <%@ taglib tagdir="/WEB-INF/tags" prefix="ddwutag" %> 
-    <%
-    String name = request.getParameter("id");
-    ArrayList list = (ArrayList)session.getAttribute("id"); 
-    if (list == null) {
-    	list = new ArrayList();
-    }
-    list.add(name);
-    %>
+    
 <!DOCTYPE html>
 <html>
 <head>
